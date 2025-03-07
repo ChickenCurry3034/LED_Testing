@@ -46,8 +46,8 @@ public class RobotContainer {
    */
   private void configureBindings() {
     // Schedule `ExampleCommand` when `exampleCondition` changes to `true`
-    m_driverController.button(1).onTrue(led.setColor(Color.kRed));
-    m_driverController.button(2).onTrue(led.start());
+    // m_driverController.button(1).onTrue(led.setColor(Color.kRed));
+    // m_driverController.button(2).onTrue(led.start());
   }
 
   /**

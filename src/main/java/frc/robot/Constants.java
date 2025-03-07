@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.util.Color;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -16,4 +18,29 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+
+  public final class LEDConstants {
+    public static final Colors DEFAULT_COLOR = Colors.Red;
+
+    public enum Colors {
+      Red(255, 0, 0),
+      Orange(255, 165, 0),
+      Yellow(255, 255, 0),
+      Green(0, 255, 0),
+      Blue(0, 0, 255),
+      Indigo(75, 0, 130),
+      Violet(238, 138, 238),
+      White(255, 255, 255);
+
+      public final int r;
+      public final int g;
+      public final int b;
+
+      private Colors(int r, int g, int b) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+      }
+    }
+}
 }
